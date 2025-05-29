@@ -1,12 +1,13 @@
 let score = 100
 // console.log(score);
 
-// another type write a code of number variables
+// another type write a code of number 
 
 // go any brower inspect to console write this code and many different properties of Number
 let num = new Number(400)  
 // console.log(num)
 
+//Number Methods
 const anotherNum = 500
 // console.log(anotherNum.toString());
 // console.log(anotherNum.toString().length);
