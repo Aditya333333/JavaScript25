@@ -55,12 +55,38 @@ const my = [
 
 // console.log(MyObject);
 // very important of object beacause using mostly database
-console.log(Object.keys(MyObject));                //convert object into array
-console.log(Object.values(MyObject));
-console.log(Object.entries(MyObject));
-console.log(MyObject.hasOwnProperty('Email'));
+// console.log(Object.keys(MyObject));                //convert object into array
+// console.log(Object.values(MyObject));
+// console.log(Object.entries(MyObject));
+// console.log(MyObject.hasOwnProperty('Email'));
+
+const course = {
+   coursename :"javascript",
+   price : 999,
+  learn :"aditya"
+}
+console.log(course.learn);
+
+const {learn} =  course
+console.log(learn);
+
+const {learn :Insector } = course
+console.log(Insector);
 
 
+// object in Json 
+// {
+//   "name":"aditya",
+//   "age":23
+//   "bol" = false
+// }
+
+
+// array of json
+// [
+//   {},
+//   {},
+// ]
 
 
 
