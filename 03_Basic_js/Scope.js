@@ -31,7 +31,7 @@ function one(num) {
     
     two()
 }
-one()
+// one()
 
 
 if (true) {
@@ -47,14 +47,13 @@ if (true) {
 // console.log(username);
 
 
-console.log(y(68));
+console.log(y(5));
 function y(num) {
     return num+1
 }
 
 
-varY(67)
-const varY = function y(num1) {
+const varY = function (num1) {              //hosting
     return num1 +2
 }
 console.log(varY(98));
