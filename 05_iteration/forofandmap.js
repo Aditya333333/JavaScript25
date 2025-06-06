@@ -1,4 +1,6 @@
 
+
+//forof used specify Array and Map
 // Array
 let Myarray = [1,2,3,4,5,6]
 for (const arr of Myarray) {
