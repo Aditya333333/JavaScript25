@@ -1,4 +1,4 @@
-// <,>,<=,>=,!=,==,===,! (learn more than..)
+// <,>,<=,>=,!=,==,===,!== (learn more than..)
 
 //differnce of  ==  and ===
 let a = 1
@@ -25,8 +25,6 @@ if (score >= 150) {
 
 
 
-
-
 let scores= 1000
 
 
@@ -47,8 +45,7 @@ let loginedIn = true
 let  upi = true
 
 if (loginedIn && upi ) {
-    console.log("welcome to shopping");
-    
+    console.log("welcome to shopping"); 
 }
 
 let EmailIdgoogle = true

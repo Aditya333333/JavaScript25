@@ -1,8 +1,8 @@
-// let i = 1;
-// while (i <=10) {
-//     console.log(i);
-//      i = i + 1
-// }
+let i = 1;
+while (i <=10) {
+    console.log(i);
+     i = i + 1
+}
 
  let Myarray = ["Aditya","Rahul","Neha"]
  let arr = 0
@@ -13,8 +13,9 @@
 
 
 
-// let j =11
-// do {
-//     console.log(`value of j ${j}`);
-//     j++
-// } while (j<=10);
+let j =11
+do {
+    console.log(`value of j ${j}`);
+    j++
+} while (j<=10);
+

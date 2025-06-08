@@ -9,19 +9,19 @@ if (Email) {
     
 }
 //falsly value
-// false, 0, -0, Bigint 0n,null,undefined,""
+// false, 0, -0, Bigint 0n,null,undefined,"",NaN
 
 // truthly value
-// "false", "0" ," ",[],
+// "false", "0" ," ",[],{}, function(){}
 
 // Array
 let arrEmail = []
 
 if (arrEmail.length === 0) {
-    console.log("Got a access array");
+    console.log(" array is empty");
     
 }else{
-    console.log("not access the array");
+    console.log("not array is empty");
     
 }
 //object
@@ -29,10 +29,10 @@ if (arrEmail.length === 0) {
 const Myobject = {}
 
 if (Object.keys(Myobject).length ===0 ) {
-    console.log("Got a access object");
+    console.log("object is empty");
     
 }else{
-    console.log("not access the object");
+    console.log("not object is empty");
     
 }
 

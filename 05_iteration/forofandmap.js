@@ -4,7 +4,7 @@
 // Array
 let Myarray = [1,2,3,4,5,6]
 for (const arr of Myarray) {
-    // console.log(arr);
+    console.log(arr);
     
 }
 

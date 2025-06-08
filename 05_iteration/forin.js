@@ -1,5 +1,5 @@
 
-//forin specifly used a forin loop
+//forin specifly used a objects
 
 let Myobject = {
     js : "javascript",
@@ -13,14 +13,14 @@ for (const key in Myobject) {
 
 let Myarray = ["aditya",2,"Rahul",4,"Neha",6]
 for (const key in Myarray) {
-    //   console.log(`${key} is a  ${Myarray[key]}`);
+      console.log(`${key} is a  ${Myarray[key]}`);
 
   
 }
 
 let Mystring = "Helloworld"
 for (const key in Mystring) {
-        // console.log(`${key} is  ${Mystring[key]}`);
+        console.log(`${key} is  ${Mystring[key]}`);
 
 }
 
