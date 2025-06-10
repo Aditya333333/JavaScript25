@@ -79,5 +79,33 @@ document.querySelector('h2')
 <h2>​Lorem ipsum dolor sit amet consectetur.​</h2>​
 document.querySelector('input[type=password]')
 <input type=​"password" name id>
+document.querySelector('ul')
+<ul>​…​</ul>​
+const Myli = document.querySelector('li')
+undefined
+Myli.style.backgroundColor = "Green"
+'Green'
+Myli.innerHTML
+'One'
+Myli.innerHTML = "five"
+'five'
+
+
++++++++++++++++++++++++++++++++++++++ querySelectorAll +++++++++++++++++++++++++++++++++++++++++++++
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+const Mylistli = document.querySelectorAll('li')
+undefined
+Mylistli
+NodeList(3) [li, li, li]
+Mylistli.style.color = "green"
+VM753:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:22
+(anonymous) @ VM753:1Understand this error
+Mylistli[0].style.color = "green"
+'green'
+Mylistli.forEach((items) => {
+items.style.backgroundColor = "red"})
 -->
 
