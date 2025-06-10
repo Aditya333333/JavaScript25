@@ -15,9 +15,11 @@
         <input type="password" name="" id="">
         <ul>
 
-            <li>One</li>
-            <li>Two</li>
-            <li>Third</li>
+            <li class="item-class">One</li>
+            <li class="item-class">Two</li>
+            <li class="item-class">Third</li>
+            <li class="item-class">Four</li>
+
         </ul>
 
         <P>Lorem ipsum dolor sit amet consectetur.</P>
@@ -31,6 +33,9 @@
 Console.log(window)
 Console.log(document)
 Console.dir(document)
+
+*************************************** getElementById ***********************************
+
 document.getElementById('firstHeading')
 document.getElementById('firstHeading').innerHTML = "<h2>Aditya raj </h2>" 
 
@@ -107,5 +112,23 @@ Mylistli[0].style.color = "green"
 'green'
 Mylistli.forEach((items) => {
 items.style.backgroundColor = "red"})
+
++++++++++++++++++++++++++++++++++++++ getElementsByClassName +++++++++++++++++++++++++++++++++++++++++++++
+
+document.getElementsByClassName("item-class")
+HTMLCollection(4) [li.item-class, li.item-class, li.item-class, li.item-class]0: li.item-class1: li.item-class2: li.item-class3: li.item-classlength: 4[[Prototype]]: HTMLCollection
+const classli = document.getElementsByClassName("item-class")
+undefined
+classli
+HTMLCollection(4) [li.item-class, li.item-class, li.item-class, li.item-class]
+Array.from(classli)
+(4) [li.item-class, li.item-class, li.item-class, li.item-class]
+const Myarrconverted = Array.from(classli)
+undefined
+Myarrconverted
+(4) [li.item-class, li.item-class, li.item-class, li.item-class]
+Myarrconverted.forEach(function(item) {item.style.color = "orange"})
+
+
 -->
 
