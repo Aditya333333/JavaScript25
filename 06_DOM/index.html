@@ -7,7 +7,19 @@
 </head>
 <body class="bg-Black">
     <div >
-        <h1 id ="title" class="heading">This is a heading of DOM </h1>
+        <h1 id ="title" class="heading">This is a heading of DOM <span style="display: none;"> test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <input type="password" name="" id="">
+        <ul>
+
+            <li>One</li>
+            <li>Two</li>
+            <li>Third</li>
+        </ul>
+
         <P>Lorem ipsum dolor sit amet consectetur.</P>
     </div>
 </body>
@@ -20,5 +32,52 @@ Console.log(window)
 Console.log(document)
 Console.dir(document)
 document.getElementById('firstHeading')
-document.getElementById('firstHeading').innerHTML = "<h2>Aditya raj </h2>"  -->
+document.getElementById('firstHeading').innerHTML = "<h2>Aditya raj </h2>" 
+
+document.getElementById('title')
+<h1 id="title" class="heading">
+
+document.getElementById('title').id
+"title"
+document.getElementById('title').className
+"heading"
+
+document.getElementById('title').getAttribute('id')
+"title"
+document.getElementById('title').getAttribute('class')
+"heading"
+
+document.getElementById('title').setAttribute('class','test')
+undefined
+const title = document.getElementById('title')
+undefined
+title
+<h1 id="title" class="test">
+
+title.style.backgroundColor = "orange"
+"orange" 
+
+title.style.borderRadius = "90px"
+"90px" 
+
+title.innerText(hidden code is css property)
+"This is a heading of DOM"
+title.textContent
+"This is a heading of DOM  test text" 
+title.innerHTML
+'This is a heading of DOM <span style="display: none;"> test text</span>'
+
++++++++++++++++++++++++++++++++++++++ querySelector +++++++++++++++++++++++++++++++++++++++++++++
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​"This is a heading of DOM "<span style=​"display:​ none;​">​ test text​</span>​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet consectetur.​</h2>​
+document.querySelector('input[type=password]')
+<input type=​"password" name id>
+-->
 
