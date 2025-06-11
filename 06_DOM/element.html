@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element on DOM</title>
+</head>
+<body>
+    <div class="weekday">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+    </div>
+</body>
+<script>
+    const weekday = document.querySelector('.weekday')
+    //   console.log(weekday);
+    //   console.log(weekday.children);
+    //   console.log(weekday.children[0]);
+    //   console.log(weekday.children[0].innerHTML);
+
+    //   for (let i = 0; i < weekday.children.length; i++) {
+    //      console.log(weekday.children[i].innerHTML);
+        
+    //   }
+      weekday.children[1].style.backgroundColor = "orange"
+    //   console.log(weekday.firstElementChild);
+    //   console.log(weekday.lastElementChild);
+      const DayOne = document.querySelector('.day')
+    //   console.log(DayOne);
+    //   console.log(DayOne.parentElement);
+    //   console.log(DayOne.nextElementSibling);
+
+    console.log("Node :",weekday.childNodes);
+    
+
+      
+
+
+
+</script>
+</html>
