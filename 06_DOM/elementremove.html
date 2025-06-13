@@ -6,6 +6,46 @@
     <title>Edit and remove Element on DOM</title>
 </head>
 <body>
-    
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
 </body>
+<script>
+    function addListLanguage(langName) {
+       const li = document.createElement('li');
+       li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)
+
+    }
+    addListLanguage('python')
+    addListLanguage('ruby')
+
+
+function addOptLanguage(langName) {
+   const li = document.createElement('li')
+   li.appendChild( document.createTextNode(langName))
+   document.querySelector('.language').appendChild(li)
+}
+addOptLanguage("java")
+
+//Edit
+ const secondlang = document.querySelector('li:nth-child(2)')
+// secondlang.innerHTML =  "mojo"
+
+const newli = document.createElement('li')
+newli.textContent = "mojo"
+secondlang.replaceWith(newli)
+
+//Edit
+
+const firstli = document.querySelector('li:first-child')
+firstli.outerHTML = '<li>js</li>'
+
+//remove
+const lastli = document.querySelector('li:last-child')
+lastli.remove()
+
+
+
+</script>
 </html>
