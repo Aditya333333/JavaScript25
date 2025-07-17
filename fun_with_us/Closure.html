@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+ <button id="orange">orange</button>
+ <button id="green">green</button>
+</body>
+<script>
+
+    //Lexical scoping
+
+    // function init() {
+    //     let name = "Mozilla";
+    //     function displayName() {
+
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+    // function outer() {
+    //     let name = 'Aditya'
+    //     function inner() {
+    //         console.log("inner", name);
+    //     }
+    //      function innerTwo() {
+    //         console.log("innerTwo", name);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+   
+ //Closure
+ function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+
+</script>
+<script>
+    // document.getElementById('orange').onclick = function(){
+
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    function Handler(color) {
+         document.body.style.backgroundColor = `${color}`
+        
+    }
+    document.getElementById('orange').onclick = Handler('orange')
+    document.getElementById('green').onclick = Handler('green')
+
+</script>
+</html>
